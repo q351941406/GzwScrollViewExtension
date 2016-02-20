@@ -1,59 +1,49 @@
-大标题  
+GzwTableViewLoading  
 ===================================  
-  大标题一般显示工程名,类似html的\<h1\><br />  
-  你只要在标题下面跟上=====即可  
+   这是我用脚写出来的运行时框架，一行代码解决UITableView加载状态和所有空数据状态
   
     
-中标题  
+样式支持全自定义  
 -----------------------------------  
-  中标题一般显示重点项,类似html的\<h2\><br />  
-  你只要在标题下面输入------即可  
+  ![enter image description here](http://a2.qpic.cn/psb?/V106kzCe1y2bCc/IAYP0Bo6y*8Rfsgq*KDvjtfqdg*T3bC6plTWm5GcSaE!/b/dF0BAAAAAAAA&bo=QAFOAkABTgIFACM!&rf=viewer_4&t=5) 
+   ![enter image description here](http://a2.qpic.cn/psb?/V106kzCe1y2bCc/UAMS*uIh4pI*b*FoSudnKDOt7mnaUeKwawNtKc2..Hk!/b/dFcBAAAAAAAA&bo=QAFOAkABTgIFACM!&rf=viewer_4&t=5)
+   ![enter image description here](http://a3.qpic.cn/psb?/V106kzCe1y2bCc/DK7oIHu2rdVbAnBVvIQisnI8Soe3AfUQP9ef6OPuKXQ!/b/dFgBAAAAAAAA&bo=QAFOAkABTgIFACM!&rf=viewer_4&t=5)
     
-### 小标题  
-  小标题类似html的\<h3\><br />  
-  小标题的格式如下 ### 小标题<br />  
-  注意#和标题字符中间要有空格  
-  
-### 注意!!!下面所有语法的提示我都先用小标题提醒了!!!   
-  
-### 单行文本框  
-    这是一个单行的文本框,只要两个Tab再输入文字即可  
+### 导入框架  
+  把工程内的 GzwTableViewLoading 文件夹拖入自己的工程
+  引用 #import "GzwTableViewLoading.h"
+   
           
-### 多行文本框    
-    这是一个有多行的文本框  
-    你可以写入代码等,每行文字只要输入两个Tab再输入文字即可  
-    这里你可以输入一段代码  
+### 使用    
+    // 在请求数据前
+    self.tableView.loading = YES;
   
-### 比如我们可以在多行文本框里输入一段代码,来一个Java版本的HelloWorld吧  
-    public class HelloWorld {  
+### 用法示例(详情看demo)
+    // 在请求数据前
+    self.tableView.loading = YES;
+    // 模拟请求延迟
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        for (int i = 0; i < 10; i++) {
+            [self.data addObject:[NSString stringWithFormat:@"I'm data，fuck！"]];
+        }
+        if (self.data.count == 0) {
+            self.tableView.loading = NO;
+        }
+        [self.tableView reloadData];
+    });
+### 框架的故事：
+当我把项目完成了，产品经理说要改掉所有页面的加载样式，这时候我是崩溃的，于是去找第三方库，找到了[一个可用的库](https://github.com/dzenbot/DZNEmptyDataSet)<br />  但需要对每个UITableVIew操作，(用继承？滚一边反省去), 
+这都导致了强耦合，于是我用运行时，不对，我用脚封装了这个库，一行代码就搞定了，真正的低耦合
+
   
-      /**  
-      * @param args  
-   */  
-   public static void main(String[] args) {  
-   System.out.println("HelloWorld!");  
   
-   }  
-  
-    }  
-### 链接  
-1.[点击这里你可以链接到www.google.com](http://www.google.com)<br />  
-2.[点击这里我你可以链接到我的博客](http://guoyunsky.iteye.com)<br />  
-  
-###只是显示图片  
-![github](http://github.com/unicorn.png "github")  
-  
-###想点击某个图片进入一个网页,比如我想点击github的icorn然后再进入www.github.com  
-[![image]](http://www.github.com/)  
-[image]: http://github.com/github.png "github"  
-  
-### 文字被些字符包围  
-> 文字被些字符包围  
+### 关于我  
+> QQ 351941406 有问题，你们是加不了的。 
 >  
-> 只要再文字前面加上>空格即可  
+> QQ群：180972893  可以加
 >  
-> 如果你要换行的话,新起一行,输入>空格即可,后面不接文字  
-> 但> 只能放在行首才有效  
+> 希望你们在使用框架的过程中联系我，提供更多宝贵的意见，一起把框架维护好。  
+ 
   
 ### 文字被些字符包围,多重包围  
 > 文字被些字符包围开始  
