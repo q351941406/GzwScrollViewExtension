@@ -11,7 +11,10 @@ GzwTableViewLoading
     
 ### 导入框架  
   把工程内的 GzwTableViewLoading 文件夹拖入自己的工程
+  
   引用 #import "GzwTableViewLoading.h"
+  
+  现已加入CocoaPods豪华午餐:pod 'GzwTableViewLoading', '~> 1.0.0'
    
           
 ### 使用    
