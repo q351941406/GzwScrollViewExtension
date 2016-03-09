@@ -37,7 +37,7 @@ GzwTableViewLoading
         [self.tableView reloadData];
     });
     
-### 自定义参数    
+### 配置参数(自定义)    
     self.tableView.buttonText = @"再次请求";
     self.tableView.buttonNormalColor = [UIColor redColor];
     self.tableView.buttonHighlightColor = [UIColor yellowColor];
