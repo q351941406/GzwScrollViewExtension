@@ -14,7 +14,7 @@ GzwTableViewLoading
   
   引用 #import "GzwTableViewLoading.h"
   
-  现已加入CocoaPods豪华午餐:pod 'GzwTableViewLoading', '~> 1.0.0'
+  现已加入CocoaPods豪华午餐:pod 'GzwTableViewLoading', '~> 1.1.0'
    
           
 ### 使用    
@@ -22,14 +22,16 @@ GzwTableViewLoading
     self.tableView.loading = YES;
   
 ### 用法示例(详情看demo)
-    // 在请求数据前
+    // 只需一行代码，我来解放你的代码
     self.tableView.loading = YES;
-    // 模拟请求延迟
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        for (int i = 0; i < 10; i++) {
-            [self.data addObject:[NSString stringWithFormat:@"I'm data，fuck！"]];
-        }
-        if (self.data.count == 0) {
+    
+    // 模拟延迟
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        if (data) {
+            for (int i = 0; i < 10; i++) {
+                [self.data addObject:[NSString stringWithFormat:@"I'm data，fuck！"]];
+            }
+        }else {// 无数据时
             self.tableView.loading = NO;
         }
         [self.tableView reloadData];
