@@ -37,9 +37,13 @@ GzwTableViewLoading
         [self.tableView reloadData];
     });
     
-### 使用    
-    // 在请求数据前
-    self.tableView.loading = YES;
+### 自定义参数    
+    self.tableView.buttonText = @"再次请求";
+    self.tableView.buttonNormalColor = [UIColor redColor];
+    self.tableView.buttonHighlightColor = [UIColor yellowColor];
+    self.tableView.loadedImageName = @"58x58";
+    self.tableView.descriptionText = @"破网络，你还是再请求一次吧";
+    self.tableView.dataVerticalOffset = 200;  
 ### 框架的故事：
 当我把项目完成了，产品经理说要改掉所有页面的加载样式，这时候我是崩溃的，于是去找第三方库，找到了[一个可用的库](https://github.com/dzenbot/DZNEmptyDataSet)<br />  但需要对每个UITableVIew操作，(用继承？滚一边反省去), 
 这都导致了强耦合，于是我用运行时，不对，我用脚封装了这个库，一行代码就搞定了，真正的低耦合
