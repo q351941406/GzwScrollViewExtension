@@ -21,9 +21,6 @@
     return _data;
 }
 
-
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -32,33 +29,51 @@
     
     // 配置参数
 //    self.tableView.buttonText = @"再次请求";
-    
-    
+//    self.tableView.buttonNormalColor = [UIColor redColor];
+//    self.tableView.buttonHighlightColor = [UIColor yellowColor];
+//    self.tableView.loadedImageName = @"58x58";
+//    self.tableView.descriptionText = @"破网络，你还是再请求一次吧";
+//    self.tableView.dataVerticalOffset = 200;
     
     // 点击响应
     [self.tableView gzwLoading:^{
         NSLog(@"再点我就肛你");
-        [self loadData];
+        [self loadingData:NO];
     }];
-    
-    [self loadData];
-    
 }
--(void)loadData
+// 有数据
+- (IBAction)loadData:(id)sender {
+    [self loadingData:YES];
+}
+// 没数据
+- (IBAction)noData:(id)sender {
+    [self loadingData:NO];
+}
+-(void)loadingData:(BOOL)data
 {
-    // 模拟延迟
+    if (self.data.count > 0) {
+        [self.data removeAllObjects];
+        [self.tableView reloadData];
+    }
+    
+    // 只需一行代码，我来解放你的代码
     self.tableView.loading = YES;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        for (int i = 0; i < 10; i++) {
-#warning 打开注释再运行看看？
-//            [self.data addObject:[NSString stringWithFormat:@"I'm data，fuck！"]];
-        }
-        if (self.data.count == 0) {
+    
+    // 模拟延迟
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        if (data) {
+            for (int i = 0; i < 10; i++) {
+                [self.data addObject:[NSString stringWithFormat:@"I'm data，fuck！"]];
+            }
+        }else {// 无数据时
             self.tableView.loading = NO;
         }
         [self.tableView reloadData];
     });
 }
+
+
+
 
 
 

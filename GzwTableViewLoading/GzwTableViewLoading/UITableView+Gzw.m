@@ -63,29 +63,32 @@ id (^block)();
     if (self.loading == loading) {
         return;
     }
-    if (loading == YES) {// 第一次的时候设置代理
-        self.emptyDataSetSource = self;
-        self.emptyDataSetDelegate = self;
-//        [self reloadEmptyDataSet];
-    }
-
-
     // 这个&loadingKey也可以理解成一个普通的字符串key，用这个key去内存寻址取值
     objc_setAssociatedObject(self, &loadingKey, @(loading), OBJC_ASSOCIATION_ASSIGN);
     // 一定要放在后面，因为上面的代码在设值，要设置完之后数据源的判断条件才能成立
-    
-    
-    if (loading == NO) {
+//    if (loading == YES) {// 第一次的时候设置代理
+        self.emptyDataSetSource = self;
+        self.emptyDataSetDelegate = self;
         [self reloadEmptyDataSet];
-    }else {
-        __weak __typeof(&*self)weakSelf = self;
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            if (weakSelf.emptyDataSetVisible) {
-//                [weakSelf reloadData];
-                weakSelf.loading = NO;
-            }
-        });
-    }
+//    }
+
+
+    
+    
+    
+//    if (loading == NO) {
+//        [self reloadEmptyDataSet];
+//    }else {
+//        __weak __typeof(&*self)weakSelf = self;
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//            if (loading) {
+//                if (weakSelf.emptyDataSetVisible) {
+////                [weakSelf reloadData];
+//                    weakSelf.loading = NO;
+//                }
+//            }
+//        });
+//    }
 }
 -(void)setLoadingClick:(void (^)())loadingClick
 {

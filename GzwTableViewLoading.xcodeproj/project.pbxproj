@@ -17,8 +17,8 @@
 		0484BA651C78452600574054 /* GzwTableViewLoadingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484BA641C78452600574054 /* GzwTableViewLoadingUITests.m */; };
 		0484BA841C7868F800574054 /* placeholder_fancy.png in Resources */ = {isa = PBXBuildFile; fileRef = 0484BA7E1C7868F800574054 /* placeholder_fancy.png */; };
 		0484BA851C7868F800574054 /* placeholder_fancy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0484BA7F1C7868F800574054 /* placeholder_fancy@2x.png */; };
-		0484BA861C7868F800574054 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484BA811C7868F800574054 /* UIScrollView+EmptyDataSet.m */; };
 		0484BA871C7868F800574054 /* UITableView+Gzw.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484BA831C7868F800574054 /* UITableView+Gzw.m */; };
+		048B088B1C9061DF005576CC /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 048B088A1C9061DF005576CC /* UIScrollView+EmptyDataSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,11 +57,11 @@
 		0484BA661C78452600574054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0484BA7E1C7868F800574054 /* placeholder_fancy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder_fancy.png; sourceTree = "<group>"; };
 		0484BA7F1C7868F800574054 /* placeholder_fancy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder_fancy@2x.png"; sourceTree = "<group>"; };
-		0484BA801C7868F800574054 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
-		0484BA811C7868F800574054 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
 		0484BA821C7868F800574054 /* UITableView+Gzw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Gzw.h"; sourceTree = "<group>"; };
 		0484BA831C7868F800574054 /* UITableView+Gzw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Gzw.m"; sourceTree = "<group>"; };
 		0484BA881C78691A00574054 /* GzwTableViewLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GzwTableViewLoading.h; sourceTree = "<group>"; };
+		048B08891C9061DF005576CC /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		048B088A1C9061DF005576CC /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,8 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				0484BA881C78691A00574054 /* GzwTableViewLoading.h */,
-				0484BA801C7868F800574054 /* UIScrollView+EmptyDataSet.h */,
-				0484BA811C7868F800574054 /* UIScrollView+EmptyDataSet.m */,
+				048B08891C9061DF005576CC /* UIScrollView+EmptyDataSet.h */,
+				048B088A1C9061DF005576CC /* UIScrollView+EmptyDataSet.m */,
 				0484BA821C7868F800574054 /* UITableView+Gzw.h */,
 				0484BA831C7868F800574054 /* UITableView+Gzw.m */,
 				0484BA7E1C7868F800574054 /* placeholder_fancy.png */,
@@ -300,9 +300,9 @@
 			files = (
 				0484BA471C78452600574054 /* ViewController.m in Sources */,
 				0484BA441C78452600574054 /* AppDelegate.m in Sources */,
-				0484BA861C7868F800574054 /* UIScrollView+EmptyDataSet.m in Sources */,
 				0484BA871C7868F800574054 /* UITableView+Gzw.m in Sources */,
 				0484BA411C78452600574054 /* main.m in Sources */,
+				048B088B1C9061DF005576CC /* UIScrollView+EmptyDataSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +526,7 @@
 				0484BA6B1C78452600574054 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0484BA6C1C78452600574054 /* Build configuration list for PBXNativeTarget "GzwTableViewLoadingTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +535,7 @@
 				0484BA6E1C78452600574054 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0484BA6F1C78452600574054 /* Build configuration list for PBXNativeTarget "GzwTableViewLoadingUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +544,7 @@
 				0484BA711C78452600574054 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
