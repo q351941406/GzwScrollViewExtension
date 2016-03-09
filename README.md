@@ -5,9 +5,9 @@ GzwTableViewLoading
     
 样式支持全自定义  
 -----------------------------------  
-  ![enter image description here](http://a2.qpic.cn/psb?/V106kzCe1y2bCc/IAYP0Bo6y*8Rfsgq*KDvjtfqdg*T3bC6plTWm5GcSaE!/b/dF0BAAAAAAAA&bo=QAFOAkABTgIFACM!&rf=viewer_4&t=5) 
-   ![enter image description here](http://a2.qpic.cn/psb?/V106kzCe1y2bCc/UAMS*uIh4pI*b*FoSudnKDOt7mnaUeKwawNtKc2..Hk!/b/dFcBAAAAAAAA&bo=QAFOAkABTgIFACM!&rf=viewer_4&t=5)
-   ![enter image description here](http://a3.qpic.cn/psb?/V106kzCe1y2bCc/DK7oIHu2rdVbAnBVvIQisnI8Soe3AfUQP9ef6OPuKXQ!/b/dFgBAAAAAAAA&bo=QAFOAkABTgIFACM!&rf=viewer_4&t=5)
+  ![enter image description here](http://a1.qpic.cn/psb?/V106kzCe1y2bCc/.F1SF.k0x2IwDNm86QQzf3yrWRtB5uw2HpADHjSmA80!/b/dKgAAAAAAAAA&bo=gAJwBIACcAQDACU!&rf=viewer_4&t=5) 
+   ![enter image description here](http://a2.qpic.cn/psb?/V106kzCe1y2bCc/SrHEiLrlKaQAKkjMenkUNoxthFm*s15uzxQTlTyXeH8!/b/dKkAAAAAAAAA&bo=gAJwBIACcAQDACU!&rf=viewer_4&t=5)
+   ![enter image description here](http://a3.qpic.cn/psb?/V106kzCe1y2bCc/nPvZZBMkqGEIq2vfC4ChHtpC*e1iEsvsq8Xj7sWhuoU!/b/dKcAAAAAAAAA&bo=gAJwBIACcAQDACU!&rf=viewer_4&t=5)
     
 ### 导入框架  
   把工程内的 GzwTableViewLoading 文件夹拖入自己的工程
