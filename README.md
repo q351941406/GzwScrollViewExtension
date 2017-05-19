@@ -1,6 +1,6 @@
 GzwTableViewLoading  
 ===================================  
-   这是我用脚写出来的运行时框架，一行代码解决UITableView加载状态和所有空数据状态
+   这是我用脚写出来的运行时框架，这是一个UIScrollView的分类，一行代码解决加载状态和没有数据下的状态，UIScrollView + UITableView + UICollectionView均可使用
   
     
 样式支持全自定义  
