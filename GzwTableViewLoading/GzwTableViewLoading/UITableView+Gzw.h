@@ -10,7 +10,7 @@
 #import "UIScrollView+EmptyDataSet.h"
 
 typedef void (^loadingBlock)();
-@interface UITableView (Gzw)<DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
+@interface UIScrollView (Gzw)<DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
 /**
  *  是否在加载 YES:转菊花 or NO:立即空状态界面
  *  PS:在加载数据前设置为YES(必需)，随后根据数据调整为NO(可选)

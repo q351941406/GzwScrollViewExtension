@@ -9,7 +9,7 @@
 #import "UITableView+Gzw.h"
 #import <objc/runtime.h>
 
-@implementation UITableView (Gzw)
+@implementation UIScrollView (Gzw)
 static const BOOL loadingKey;
 static const char loadedImageNameKey;
 static const char descriptionTextKey;
@@ -26,7 +26,7 @@ id (^block)();
 //    //方法交换应该被保证，在程序中只会执行一次
 //    static dispatch_once_t onceToken;
 //    dispatch_once(&onceToken, ^{
-//        
+//
 //        //获得viewController的生命周期方法的selector
 //        SEL systemSel = @selector(initWithFrame:style:);
 //        //自己实现的将要被交换的方法的selector
@@ -34,7 +34,7 @@ id (^block)();
 //        //两个方法的Method
 //        Method systemMethod = class_getInstanceMethod([self class], systemSel);
 //        Method swizzMethod = class_getInstanceMethod([self class], swizzSel);
-//        
+//
 //        //首先动态添加方法，实现是被交换的方法，返回值表示添加成功还是失败
 //        BOOL isAdd = class_addMethod(self, systemSel, method_getImplementation(swizzMethod), method_getTypeEncoding(swizzMethod));
 //        if (isAdd) {
@@ -52,9 +52,9 @@ id (^block)();
 //    //这时候调用自己，看起来像是死循环
 //    //但是其实自己的实现已经被替换了
 //     NSLog(@"swizzle");
-//    
+//
 //    [self swiz_init];
-//   
+//
 //}
 
 #pragma mark set Mettod
@@ -66,29 +66,29 @@ id (^block)();
     // 这个&loadingKey也可以理解成一个普通的字符串key，用这个key去内存寻址取值
     objc_setAssociatedObject(self, &loadingKey, @(loading), OBJC_ASSOCIATION_ASSIGN);
     // 一定要放在后面，因为上面的代码在设值，要设置完之后数据源的判断条件才能成立
-//    if (loading == YES) {// 第一次的时候设置代理
-        self.emptyDataSetSource = self;
-        self.emptyDataSetDelegate = self;
-        [self reloadEmptyDataSet];
-//    }
-
-
+    //    if (loading == YES) {// 第一次的时候设置代理
+    self.emptyDataSetSource = self;
+    self.emptyDataSetDelegate = self;
+    [self reloadEmptyDataSet];
+    //    }
     
     
     
-//    if (loading == NO) {
-//        [self reloadEmptyDataSet];
-//    }else {
-//        __weak __typeof(&*self)weakSelf = self;
-//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//            if (loading) {
-//                if (weakSelf.emptyDataSetVisible) {
-////                [weakSelf reloadData];
-//                    weakSelf.loading = NO;
-//                }
-//            }
-//        });
-//    }
+    
+    
+    //    if (loading == NO) {
+    //        [self reloadEmptyDataSet];
+    //    }else {
+    //        __weak __typeof(&*self)weakSelf = self;
+    //        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    //            if (loading) {
+    //                if (weakSelf.emptyDataSetVisible) {
+    ////                [weakSelf reloadData];
+    //                    weakSelf.loading = NO;
+    //                }
+    //            }
+    //        });
+    //    }
 }
 -(void)setLoadingClick:(void (^)())loadingClick
 {
@@ -197,17 +197,17 @@ id (^block)();
 //    if (self.loading) {
 //        return nil;
 //    }else {
-//        
+//
 //        NSString *text = @"没有数据";
-//        
+//
 //        NSMutableParagraphStyle *paragraph = [NSMutableParagraphStyle new];
 //        paragraph.lineBreakMode = NSLineBreakByWordWrapping;
 //        paragraph.alignment = NSTextAlignmentCenter;
-//        
+//
 //        NSDictionary *attributes = @{NSFontAttributeName: [UIFont systemFontOfSize:14.0f],
 //                                     NSForegroundColorAttributeName: [UIColor lightGrayColor],
 //                                     NSParagraphStyleAttributeName: paragraph};
-//        
+//
 //        return [[NSAttributedString alloc] initWithString:text attributes:attributes];
 //    }
 //}
@@ -240,16 +240,18 @@ id (^block)();
         return nil;
     }else {
         UIColor *textColor = nil;
+        
         // 某种状态下的颜色
-        UIColor *colorOne = [UIColor colorWithRed:253/255.0f green:120/255.0f blue:76/255.0f alpha:1];
-        UIColor *colorTow = [UIColor colorWithRed:247/255.0f green:188/255.0f blue:169/255.0f alpha:1];
+        UIColor *colorOne = UINavigationBar.appearance.barTintColor;
+        colorOne = colorOne ? colorOne : [UIColor redColor];// 取出来有可能是空
+        UIColor *colorTow = [colorOne colorWithAlphaComponent:0.35];
         // 判断外部是否有设置
         colorOne = self.buttonNormalColor ? self.buttonNormalColor : colorOne;
         colorTow = self.buttonHighlightColor ? self.buttonHighlightColor : colorTow;
         textColor = state == UIControlStateNormal ? colorOne : colorTow;
         NSDictionary *attributes = @{NSFontAttributeName: [UIFont boldSystemFontOfSize:16.0f],
                                      NSForegroundColorAttributeName: textColor};
-
+        
         return [[NSAttributedString alloc] initWithString:self.buttonText ? self.buttonText : @"再次刷新" attributes:attributes];
     }
 }
@@ -287,10 +289,10 @@ id (^block)();
 - (void)emptyDataSet:(UIScrollView *)scrollView didTapView:(UIView *)view
 {
     // 暂时不响应
-//    if (self.loadingClick) {
-//        self.loadingClick();
-//        [self reloadEmptyDataSet];
-//    }
+    //    if (self.loadingClick) {
+    //        self.loadingClick();
+    //        [self reloadEmptyDataSet];
+    //    }
 }
 // 点击空状态下的按钮会调用
 - (void)emptyDataSet:(UIScrollView *)scrollView didTapButton:(UIButton *)button
