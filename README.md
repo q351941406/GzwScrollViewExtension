@@ -1,6 +1,6 @@
 GzwScrollViewExtension  
 ===================================  
-   这是我用脚写出来的运行时框架，这是一个UIScrollView的分类，一行代码解决加载状态和没有数据下的状态，UIScrollView + UITableView + UICollectionView均可使用
+   这是我用脚写出来的运行时框架，UIScrollView的分类，一行代码解决加载状态和没有数据下的状态，UIScrollView + UITableView + UICollectionView均可使用
   
     
 样式支持全自定义  
