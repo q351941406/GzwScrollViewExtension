@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "GzwTableViewLoading.h"
+#import "GzwScrollViewExtension.h"
 @interface ViewController ()
 @property (nonatomic,strong) NSMutableArray *data;
 @end

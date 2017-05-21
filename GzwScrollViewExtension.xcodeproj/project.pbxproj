@@ -13,8 +13,8 @@
 		0484BA4A1C78452600574054 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0484BA481C78452600574054 /* Main.storyboard */; };
 		0484BA4C1C78452600574054 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0484BA4B1C78452600574054 /* Assets.xcassets */; };
 		0484BA4F1C78452600574054 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0484BA4D1C78452600574054 /* LaunchScreen.storyboard */; };
-		0484BA5A1C78452600574054 /* GzwTableViewLoadingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484BA591C78452600574054 /* GzwTableViewLoadingTests.m */; };
-		0484BA651C78452600574054 /* GzwTableViewLoadingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484BA641C78452600574054 /* GzwTableViewLoadingUITests.m */; };
+		0484BA5A1C78452600574054 /* GzwScrollViewExtensionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484BA591C78452600574054 /* GzwScrollViewExtensionTests.m */; };
+		0484BA651C78452600574054 /* GzwScrollViewExtensionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484BA641C78452600574054 /* GzwScrollViewExtensionUITests.m */; };
 		0484BA841C7868F800574054 /* placeholder_fancy.png in Resources */ = {isa = PBXBuildFile; fileRef = 0484BA7E1C7868F800574054 /* placeholder_fancy.png */; };
 		0484BA851C7868F800574054 /* placeholder_fancy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0484BA7F1C7868F800574054 /* placeholder_fancy@2x.png */; };
 		0484BA871C7868F800574054 /* UITableView+Gzw.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484BA831C7868F800574054 /* UITableView+Gzw.m */; };
@@ -27,19 +27,19 @@
 			containerPortal = 0484BA341C78452600574054 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0484BA3B1C78452600574054;
-			remoteInfo = GzwTableViewLoading;
+			remoteInfo = GzwScrollViewExtension;
 		};
 		0484BA611C78452600574054 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0484BA341C78452600574054 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0484BA3B1C78452600574054;
-			remoteInfo = GzwTableViewLoading;
+			remoteInfo = GzwScrollViewExtension;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0484BA3C1C78452600574054 /* GzwTableViewLoading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GzwTableViewLoading.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0484BA3C1C78452600574054 /* GzwScrollViewExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GzwScrollViewExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0484BA401C78452600574054 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0484BA421C78452600574054 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0484BA431C78452600574054 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,17 +49,17 @@
 		0484BA4B1C78452600574054 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0484BA4E1C78452600574054 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0484BA501C78452600574054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0484BA551C78452600574054 /* GzwTableViewLoadingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GzwTableViewLoadingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0484BA591C78452600574054 /* GzwTableViewLoadingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GzwTableViewLoadingTests.m; sourceTree = "<group>"; };
+		0484BA551C78452600574054 /* GzwScrollViewExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GzwScrollViewExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0484BA591C78452600574054 /* GzwScrollViewExtensionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GzwScrollViewExtensionTests.m; sourceTree = "<group>"; };
 		0484BA5B1C78452600574054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0484BA601C78452600574054 /* GzwTableViewLoadingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GzwTableViewLoadingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0484BA641C78452600574054 /* GzwTableViewLoadingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GzwTableViewLoadingUITests.m; sourceTree = "<group>"; };
+		0484BA601C78452600574054 /* GzwScrollViewExtensionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GzwScrollViewExtensionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0484BA641C78452600574054 /* GzwScrollViewExtensionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GzwScrollViewExtensionUITests.m; path = ../GzwScrollViewExtensionUITests/GzwScrollViewExtensionUITests.m; sourceTree = "<group>"; };
 		0484BA661C78452600574054 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0484BA7E1C7868F800574054 /* placeholder_fancy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder_fancy.png; sourceTree = "<group>"; };
 		0484BA7F1C7868F800574054 /* placeholder_fancy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder_fancy@2x.png"; sourceTree = "<group>"; };
 		0484BA821C7868F800574054 /* UITableView+Gzw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Gzw.h"; sourceTree = "<group>"; };
 		0484BA831C7868F800574054 /* UITableView+Gzw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Gzw.m"; sourceTree = "<group>"; };
-		0484BA881C78691A00574054 /* GzwTableViewLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GzwTableViewLoading.h; sourceTree = "<group>"; };
+		0484BA881C78691A00574054 /* GzwScrollViewExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GzwScrollViewExtension.h; sourceTree = "<group>"; };
 		048B08891C9061DF005576CC /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
 		048B088A1C9061DF005576CC /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,9 +92,9 @@
 		0484BA331C78452600574054 = {
 			isa = PBXGroup;
 			children = (
-				0484BA3E1C78452600574054 /* GzwTableViewLoading */,
-				0484BA581C78452600574054 /* GzwTableViewLoadingTests */,
-				0484BA631C78452600574054 /* GzwTableViewLoadingUITests */,
+				0484BA3E1C78452600574054 /* GzwScrollViewExtension */,
+				0484BA581C78452600574054 /* GzwScrollViewExtensionTests */,
+				0484BA631C78452600574054 /* GzwScrollViewExtensionUITests */,
 				0484BA3D1C78452600574054 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,17 +102,17 @@
 		0484BA3D1C78452600574054 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0484BA3C1C78452600574054 /* GzwTableViewLoading.app */,
-				0484BA551C78452600574054 /* GzwTableViewLoadingTests.xctest */,
-				0484BA601C78452600574054 /* GzwTableViewLoadingUITests.xctest */,
+				0484BA3C1C78452600574054 /* GzwScrollViewExtension.app */,
+				0484BA551C78452600574054 /* GzwScrollViewExtensionTests.xctest */,
+				0484BA601C78452600574054 /* GzwScrollViewExtensionUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0484BA3E1C78452600574054 /* GzwTableViewLoading */ = {
+		0484BA3E1C78452600574054 /* GzwScrollViewExtension */ = {
 			isa = PBXGroup;
 			children = (
-				0484BA7D1C7868F800574054 /* GzwTableViewLoading */,
+				0484BA7D1C7868F800574054 /* GzwScrollViewExtension */,
 				0484BA421C78452600574054 /* AppDelegate.h */,
 				0484BA431C78452600574054 /* AppDelegate.m */,
 				0484BA451C78452600574054 /* ViewController.h */,
@@ -123,7 +123,7 @@
 				0484BA501C78452600574054 /* Info.plist */,
 				0484BA3F1C78452600574054 /* Supporting Files */,
 			);
-			path = GzwTableViewLoading;
+			path = GzwScrollViewExtension;
 			sourceTree = "<group>";
 		};
 		0484BA3F1C78452600574054 /* Supporting Files */ = {
@@ -134,28 +134,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0484BA581C78452600574054 /* GzwTableViewLoadingTests */ = {
+		0484BA581C78452600574054 /* GzwScrollViewExtensionTests */ = {
 			isa = PBXGroup;
 			children = (
-				0484BA591C78452600574054 /* GzwTableViewLoadingTests.m */,
+				0484BA591C78452600574054 /* GzwScrollViewExtensionTests.m */,
 				0484BA5B1C78452600574054 /* Info.plist */,
 			);
-			path = GzwTableViewLoadingTests;
+			path = GzwScrollViewExtensionTests;
 			sourceTree = "<group>";
 		};
-		0484BA631C78452600574054 /* GzwTableViewLoadingUITests */ = {
+		0484BA631C78452600574054 /* GzwScrollViewExtensionUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0484BA641C78452600574054 /* GzwTableViewLoadingUITests.m */,
+				0484BA641C78452600574054 /* GzwScrollViewExtensionUITests.m */,
 				0484BA661C78452600574054 /* Info.plist */,
 			);
-			path = GzwTableViewLoadingUITests;
+			path = GzwScrollViewExtensionUITests;
 			sourceTree = "<group>";
 		};
-		0484BA7D1C7868F800574054 /* GzwTableViewLoading */ = {
+		0484BA7D1C7868F800574054 /* GzwScrollViewExtension */ = {
 			isa = PBXGroup;
 			children = (
-				0484BA881C78691A00574054 /* GzwTableViewLoading.h */,
+				0484BA881C78691A00574054 /* GzwScrollViewExtension.h */,
 				048B08891C9061DF005576CC /* UIScrollView+EmptyDataSet.h */,
 				048B088A1C9061DF005576CC /* UIScrollView+EmptyDataSet.m */,
 				0484BA821C7868F800574054 /* UITableView+Gzw.h */,
@@ -163,15 +163,15 @@
 				0484BA7E1C7868F800574054 /* placeholder_fancy.png */,
 				0484BA7F1C7868F800574054 /* placeholder_fancy@2x.png */,
 			);
-			path = GzwTableViewLoading;
+			path = GzwScrollViewExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0484BA3B1C78452600574054 /* GzwTableViewLoading */ = {
+		0484BA3B1C78452600574054 /* GzwScrollViewExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0484BA691C78452600574054 /* Build configuration list for PBXNativeTarget "GzwTableViewLoading" */;
+			buildConfigurationList = 0484BA691C78452600574054 /* Build configuration list for PBXNativeTarget "GzwScrollViewExtension" */;
 			buildPhases = (
 				0484BA381C78452600574054 /* Sources */,
 				0484BA391C78452600574054 /* Frameworks */,
@@ -181,14 +181,14 @@
 			);
 			dependencies = (
 			);
-			name = GzwTableViewLoading;
-			productName = GzwTableViewLoading;
-			productReference = 0484BA3C1C78452600574054 /* GzwTableViewLoading.app */;
+			name = GzwScrollViewExtension;
+			productName = GzwScrollViewExtension;
+			productReference = 0484BA3C1C78452600574054 /* GzwScrollViewExtension.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0484BA541C78452600574054 /* GzwTableViewLoadingTests */ = {
+		0484BA541C78452600574054 /* GzwScrollViewExtensionTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0484BA6C1C78452600574054 /* Build configuration list for PBXNativeTarget "GzwTableViewLoadingTests" */;
+			buildConfigurationList = 0484BA6C1C78452600574054 /* Build configuration list for PBXNativeTarget "GzwScrollViewExtensionTests" */;
 			buildPhases = (
 				0484BA511C78452600574054 /* Sources */,
 				0484BA521C78452600574054 /* Frameworks */,
@@ -199,14 +199,14 @@
 			dependencies = (
 				0484BA571C78452600574054 /* PBXTargetDependency */,
 			);
-			name = GzwTableViewLoadingTests;
-			productName = GzwTableViewLoadingTests;
-			productReference = 0484BA551C78452600574054 /* GzwTableViewLoadingTests.xctest */;
+			name = GzwScrollViewExtensionTests;
+			productName = GzwScrollViewExtensionTests;
+			productReference = 0484BA551C78452600574054 /* GzwScrollViewExtensionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0484BA5F1C78452600574054 /* GzwTableViewLoadingUITests */ = {
+		0484BA5F1C78452600574054 /* GzwScrollViewExtensionUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0484BA6F1C78452600574054 /* Build configuration list for PBXNativeTarget "GzwTableViewLoadingUITests" */;
+			buildConfigurationList = 0484BA6F1C78452600574054 /* Build configuration list for PBXNativeTarget "GzwScrollViewExtensionUITests" */;
 			buildPhases = (
 				0484BA5C1C78452600574054 /* Sources */,
 				0484BA5D1C78452600574054 /* Frameworks */,
@@ -217,9 +217,9 @@
 			dependencies = (
 				0484BA621C78452600574054 /* PBXTargetDependency */,
 			);
-			name = GzwTableViewLoadingUITests;
-			productName = GzwTableViewLoadingUITests;
-			productReference = 0484BA601C78452600574054 /* GzwTableViewLoadingUITests.xctest */;
+			name = GzwScrollViewExtensionUITests;
+			productName = GzwScrollViewExtensionUITests;
+			productReference = 0484BA601C78452600574054 /* GzwScrollViewExtensionUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -229,7 +229,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = GzwTableViewLoading;
+				ORGANIZATIONNAME = GzwScrollViewExtension;
 				TargetAttributes = {
 					0484BA3B1C78452600574054 = {
 						CreatedOnToolsVersion = 7.2;
@@ -244,7 +244,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0484BA371C78452600574054 /* Build configuration list for PBXProject "GzwTableViewLoading" */;
+			buildConfigurationList = 0484BA371C78452600574054 /* Build configuration list for PBXProject "GzwScrollViewExtension" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -257,9 +257,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0484BA3B1C78452600574054 /* GzwTableViewLoading */,
-				0484BA541C78452600574054 /* GzwTableViewLoadingTests */,
-				0484BA5F1C78452600574054 /* GzwTableViewLoadingUITests */,
+				0484BA3B1C78452600574054 /* GzwScrollViewExtension */,
+				0484BA541C78452600574054 /* GzwScrollViewExtensionTests */,
+				0484BA5F1C78452600574054 /* GzwScrollViewExtensionUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -310,7 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0484BA5A1C78452600574054 /* GzwTableViewLoadingTests.m in Sources */,
+				0484BA5A1C78452600574054 /* GzwScrollViewExtensionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0484BA651C78452600574054 /* GzwTableViewLoadingUITests.m in Sources */,
+				0484BA651C78452600574054 /* GzwScrollViewExtensionUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,12 +327,12 @@
 /* Begin PBXTargetDependency section */
 		0484BA571C78452600574054 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0484BA3B1C78452600574054 /* GzwTableViewLoading */;
+			target = 0484BA3B1C78452600574054 /* GzwScrollViewExtension */;
 			targetProxy = 0484BA561C78452600574054 /* PBXContainerItemProxy */;
 		};
 		0484BA621C78452600574054 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0484BA3B1C78452600574054 /* GzwTableViewLoading */;
+			target = 0484BA3B1C78452600574054 /* GzwScrollViewExtension */;
 			targetProxy = 0484BA611C78452600574054 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -441,9 +441,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = GzwTableViewLoading/Info.plist;
+				INFOPLIST_FILE = GzwScrollViewExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GzwTableViewLoading.GzwTableViewLoading;
+				PRODUCT_BUNDLE_IDENTIFIER = GzwScrollViewExtension.GzwScrollViewExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -452,9 +452,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = GzwTableViewLoading/Info.plist;
+				INFOPLIST_FILE = GzwScrollViewExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GzwTableViewLoading.GzwTableViewLoading;
+				PRODUCT_BUNDLE_IDENTIFIER = GzwScrollViewExtension.GzwScrollViewExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -463,11 +463,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = GzwTableViewLoadingTests/Info.plist;
+				INFOPLIST_FILE = GzwScrollViewExtensionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GzwTableViewLoading.GzwTableViewLoadingTests;
+				PRODUCT_BUNDLE_IDENTIFIER = GzwScrollViewExtension.GzwScrollViewExtensionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GzwTableViewLoading.app/GzwTableViewLoading";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GzwScrollViewExtension.app/GzwScrollViewExtension";
 			};
 			name = Debug;
 		};
@@ -475,22 +475,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = GzwTableViewLoadingTests/Info.plist;
+				INFOPLIST_FILE = GzwScrollViewExtensionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GzwTableViewLoading.GzwTableViewLoadingTests;
+				PRODUCT_BUNDLE_IDENTIFIER = GzwScrollViewExtension.GzwScrollViewExtensionTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GzwTableViewLoading.app/GzwTableViewLoading";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GzwScrollViewExtension.app/GzwScrollViewExtension";
 			};
 			name = Release;
 		};
 		0484BA701C78452600574054 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = GzwTableViewLoadingUITests/Info.plist;
+				INFOPLIST_FILE = GzwScrollViewExtensionUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GzwTableViewLoading.GzwTableViewLoadingUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = GzwScrollViewExtension.GzwScrollViewExtensionUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = GzwTableViewLoading;
+				TEST_TARGET_NAME = GzwScrollViewExtension;
 				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
@@ -498,11 +498,11 @@
 		0484BA711C78452600574054 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = GzwTableViewLoadingUITests/Info.plist;
+				INFOPLIST_FILE = GzwScrollViewExtensionUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GzwTableViewLoading.GzwTableViewLoadingUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = GzwScrollViewExtension.GzwScrollViewExtensionUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = GzwTableViewLoading;
+				TEST_TARGET_NAME = GzwScrollViewExtension;
 				USES_XCTRUNNER = YES;
 			};
 			name = Release;
@@ -510,7 +510,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0484BA371C78452600574054 /* Build configuration list for PBXProject "GzwTableViewLoading" */ = {
+		0484BA371C78452600574054 /* Build configuration list for PBXProject "GzwScrollViewExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0484BA671C78452600574054 /* Debug */,
@@ -519,7 +519,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0484BA691C78452600574054 /* Build configuration list for PBXNativeTarget "GzwTableViewLoading" */ = {
+		0484BA691C78452600574054 /* Build configuration list for PBXNativeTarget "GzwScrollViewExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0484BA6A1C78452600574054 /* Debug */,
@@ -528,7 +528,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0484BA6C1C78452600574054 /* Build configuration list for PBXNativeTarget "GzwTableViewLoadingTests" */ = {
+		0484BA6C1C78452600574054 /* Build configuration list for PBXNativeTarget "GzwScrollViewExtensionTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0484BA6D1C78452600574054 /* Debug */,
@@ -537,7 +537,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0484BA6F1C78452600574054 /* Build configuration list for PBXNativeTarget "GzwTableViewLoadingUITests" */ = {
+		0484BA6F1C78452600574054 /* Build configuration list for PBXNativeTarget "GzwScrollViewExtensionUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0484BA701C78452600574054 /* Debug */,
