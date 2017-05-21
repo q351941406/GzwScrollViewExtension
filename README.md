@@ -1,4 +1,4 @@
-GzwTableViewLoading  
+GzwScrollViewExtension  
 ===================================  
    这是我用脚写出来的运行时框架，这是一个UIScrollView的分类，一行代码解决加载状态和没有数据下的状态，UIScrollView + UITableView + UICollectionView均可使用
   
@@ -8,11 +8,11 @@ GzwTableViewLoading
   ![enter image description here](http://qpic.cn/b2YFTe1FP) 
     
 ### 导入框架  
-  把工程内的 GzwTableViewLoading 文件夹拖入自己的工程
+  把工程内的 GzwScrollViewExtension 文件夹拖入自己的工程
   
-  引用 #import "GzwTableViewLoading.h"
+  引用 #import "GzwScrollViewExtension.h"
   
-  现已加入CocoaPods豪华午餐:pod 'GzwTableViewLoading', '~> 1.1.0'
+  现已加入CocoaPods豪华午餐:pod 'GzwScrollViewExtension', '~> 1.1.0'
    
           
 ### 使用    
@@ -43,7 +43,7 @@ GzwTableViewLoading
     self.tableView.descriptionText = @"破网络，你还是再请求一次吧";
     self.tableView.dataVerticalOffset = 200;  
 ### 框架的故事：
-当我把项目完成了，产品经理说要改掉所有页面的加载样式，这时候我是崩溃的，于是去找第三方库，找到了[一个可用的库](https://github.com/dzenbot/DZNEmptyDataSet)<br />  但需要对每个UITableVIew操作，(用继承？滚一边反省去), 
+当我把项目完成了，产品经理说要改掉所有页面的加载样式，这时候我是崩溃的，于是去找第三方库，找到了[一个可用的库](https://github.com/dzenbot/DZNEmptyDataSet)<br />  但需要对每个VC操作，(用继承？滚一边反省去), 
 这都导致了强耦合，于是我用运行时，不对，我用脚封装了这个库，一行代码就搞定了，真正的低耦合
 
   
