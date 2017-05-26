@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.version          = "1.3.0"
   s.summary          = "The classification of a UIScrollView on iOS."
   s.description      = <<-DESC
-                       The classification of a UITableVIew on iOS, which implement by Objective-C.
+                       The classification of a UIScrollView on iOS, which implement by Objective-C.
                        DESC
   s.homepage         = "https://github.com/q351941406/GzwScrollViewExtension.git"
   # s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
