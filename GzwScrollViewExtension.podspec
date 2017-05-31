@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
   spec.name             = 'GzwScrollViewExtension'
   spec.version          = '1.3.0'
-  spec.license   	= { :type => 'MIT' }
+  #spec.license   	= { :type => 'MIT' }
   spec.homepage         = 'https://github.com/q351941406/GzwScrollViewExtension'
   spec.authors           = { '甘正威' => '351941406@qq.com' }
   spec.summary          = 'The classification of a UIScrollView on iOS.'
