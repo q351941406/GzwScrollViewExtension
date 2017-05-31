@@ -7,7 +7,6 @@ Pod::Spec.new do |s|
                        The classification of a UIScrollView on iOS, which implement by Objective-C.
                        DESC
   s.homepage         = "https://github.com/q351941406/GzwScrollViewExtension"
-  # s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license  	     = { :type => 'MIT' }
   s.author           = { "甘正威" => "351941406@qq.com" }
   s.source           = { :git => "https://github.com/q351941406/GzwScrollViewExtension.git", :tag => s.version }
