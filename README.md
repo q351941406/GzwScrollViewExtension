@@ -12,7 +12,9 @@ GzwScrollViewExtension
   
   引用 #import "GzwScrollViewExtension.h"
   
-  现已加入CocoaPods豪华午餐:pod 'GzwScrollViewExtension', '~> 1.1.0'
+  现已加入CocoaPods豪华午餐:pod 'GzwScrollViewExtension', '~> 1.3.1'
+  PS:如果查找不到框架，请运行:rm ~/Library/Caches/CocoaPods/search_index.json  
+     再执行:pod search GzwScrollViewExtension
    
           
 ### 使用    
